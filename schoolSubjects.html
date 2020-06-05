@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>School Subjects</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="JavaScript" href="subjects.script">
+  </head>
+  <body>
+    <div class="Title">
+      <header>school Subjects</header>
+      <br><br>
+      <p id="description"> Here at Mzamomtsha we try our very best to cater to the needs of all children</p>
+    </div>
+    <div class="Subjects">
+      <ul id="offeredstuff">
+        <li>Xhosa</li>
+        <li>English</li>
+        <li>Afrikaans</li>
+        <li>Mathematics</li>
+        <li>Physics</li>
+        <li>Biology</li>
+        <li>Creative Arts</li>
+        <li>Music</li>
+        <li>Accounting</li>
+        <li>Business</li>
+        <li>I.T</li>
+      </ul>
+      <br><br>
+      <p>It is important to note that certain subjects require learners to score a certain amount inother subjects if they wish to take those subjects.
+      Here you can enter your marks to see if you qualify for the subjects.</p>
+      <div class="IT calculator">
+        Math <input  id="Maths" placeholder="Please enter your math mark" type="number">
+        <br><br>
+        English <input id="English" placeholder="Please enter your english mark" type="number">
+        <br><br>
+        <button onClick="readyForIT()" id="ITbutton">Ready for IT?</button>
+      </div>
+    </div>
+    <script>
+        function readyForIT(){
+          var mathMark = document.getElementById("Maths").value;
+          var engMark = document.getElementById("English").value;
+          if (  mathMark >= 50 && engMark >= 50 ) {
+            return true;
+            alert("Your good to go, well done!");
+          }
+          document.write("unlucky bro");
+          else {
+            return false;
+            alert("Required mark not met as of yet, Keep trying!!!");
+          }
+          document.write("well done bro");
+        }
+    </script>
+  </body>
+</html>

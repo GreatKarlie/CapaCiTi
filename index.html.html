@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mzamomtsha Primary School Homepage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+</head>
+<body style="background-color: #5D5C61;">
+    <div id="header">
+            <div id="schoolLogo">
+                <img src="Images/Head/headSchoolLogo.png" alt="School badge">
+            </div>
+    <div id="heading">
+        <span class="schoolName">Mzamomtsha Primary School</span>
+   </div>
+   <div id="navHolder">
+        <a class="navLink" href="index.html"><div class="navBar">Home</div
+          ></a>
+        <a class="navLink" href="aboutUs.html"><div class="navBar">About</div></a>
+        <a class="navLink" href="eventsPageNewerDesign.html"><div class="navBar">Events</div></a>
+        <a class="navLink" href="schoolSubjects.html"><div class="navBar">Subjects</div></a>
+   </div>
+</div>
+<div class="homepage">
+    <div class="mission">Our mission is to develop students with active and creative minds, a sense of understanding and compassion
+        for others, and the courage to act on their beliefs.
+        We stress the total development of each child: spiritual, moral, intellectual, social, emotional, and physical.</div>
+        <br><br><br><br><br><br>
+        <div id="Registration">
+          Name: <input id="Name" type="text" name="" value="">
+          Surname:<input id="Surname" type="text" name="" value="">
+          Grade:<input id="Grade" type="number" name="" value="">
+          Telephone number:<input id="tel.No" type="tel" name="Telephone" value="">
+          <button onClick="registration()" name="button">Register</button>
+        </div>
+    <div class="homeImages">
+        <img src="Images/HomepageImages/DesktopView/homepageImage1.jpg">
+        <img src="Images/HomepageImages/DesktopView/homepageImage2.jpg">
+        <img src="Images/HomepageImages/DesktopView/homepageImage3.jpg">
+    </div>
+
+</div>
+    <div class="linksHomepage">
+        <div style="padding-top: 4px;"><a class="socialShower">Connect with us:</a></div><!--Social Media links to various social media networking platforms-->
+        <div><a class="socialLink" href="https://twitter.com/"><img src="Images/Header/twitter.png" alt="Twitter" width="27px" height="27px"></div>
+        <div><a class="socialLink" href="https://www.facebook.com/"><img src="Images/Header/facebook.png" alt="Facebook" width="27px" height="27px"></div>
+        <div><a class="socialLink" href="https://www.instagram.com/"><img src="Images/Header/instagram.png" alt="Instagram" width="27px" height="27px"></div>
+    </div>
+    <div id="footer">
+        <div style="justify-self: flex-start;"><a class="socialLink" href="https://rclfoods.com/brand/ouma/"
+            style="margin-right: 5px;background-color: #C5C1C0;">Proudly Sponsored by Dip 'n Ouma</a>
+        </div>
+           <div style="padding-top: 4px;"><img src="Images/Footer/footerOumaRusksLogo.jpg"
+            alt="Dip 'n Ouma" width="27px" height="27px" style="background-color: #C5C1C0;">
+        </div>
+    </div>
+    <script type="text/javascript">
+      function registration(){
+        var Name = getElementById('Name').value;
+        var Surname = getElementById('Surname').value;
+        var Grade = getElementById('Grade').value;
+        var Telephone = getElementById('tel.No').value;
+        alert("Congratulations "+Name+""+Surname+"has been registered for grade "+Grade);
+      }
+    </script>
+</body>
+</html>
